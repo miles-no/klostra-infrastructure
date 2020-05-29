@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: backend
+  annotations:
+    kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+  rules:
+    - host: klostra-backend.50109b3386884be38c0a.northeurope.aksapp.io
+      http:
+        paths:
+          - backend:
+              serviceName: hasura-service
+              servicePort: 80
+            path: /

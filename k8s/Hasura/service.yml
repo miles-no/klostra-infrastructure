@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: hasura
+  name: hasura-service
+spec:
+  ports:
+    - name: "hasura-service-port"
+      port: 80
+      targetPort: 8080
+  selector:
+    app: hasura
