@@ -6,7 +6,7 @@ metadata:
     app: hasura
     hasuraService: custom
   name: hasura
-  namespace: database
+  namespace: default
 spec:
   replicas: 1
   strategy:
@@ -24,11 +24,11 @@ spec:
         app: hasura
     spec:
       containers:
-        - image: hasura/graphql-engine
+        - image: hasura/graphql-engine:v1.2.2
           name: hasura
           env:
             - name: HASURA_GRAPHQL_DATABASE_URL
-              value: "postgresql://postgres:sWssb3pm24@10.0.59.225:5432/postgres"
+              value: "postgresql://postgres:FwbvkXzA1o@postgresql:5432/postgres"
             - name: HASURA_GRAPHQL_ENABLE_CONSOLE
               value: "true"
           ports:

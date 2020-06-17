@@ -1,0 +1,31 @@
+{
+    "cols": [{
+        "id": "KOKkommuneregion0000",
+        "label": "region",
+        "type": "string"
+    }, {
+        "id": "ContentsCode",
+        "label": "statistikkvariabel",
+        "type": "string"
+    }, {
+        "id": "Tid",
+        "label": "år",
+        "type": "string"
+    }, {
+        "id": "value",
+        "label": "Value",
+        "type": "number"
+    }],
+    "rows": [{
+        "id": 123,
+        "c": [{
+            "v": "Halden"
+        }, {
+            "v": "Brutto driftsutgifter til funksjon 338 og 339 pr. innbygger, konsern (1000 kr)"
+        }, {
+            "v": "2015"
+        }, {
+            "v": null
+        }]
+    }]
+}

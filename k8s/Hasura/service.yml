@@ -7,7 +7,7 @@ metadata:
 spec:
   ports:
     - name: "hasura-service-port"
-      port: 80
+      port: 9001
       targetPort: 8080
   selector:
     app: hasura
