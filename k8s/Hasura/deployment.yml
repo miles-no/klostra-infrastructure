@@ -28,7 +28,7 @@ spec:
           name: hasura
           env:
             - name: HASURA_GRAPHQL_DATABASE_URL
-              value: "postgresql://postgres:<YourPostgresPassword>@postgresql:5432/postgres"
+              value: "postgresql://postgres:<YourPostgresPassword>@postgres-postgresql:5432/postgres"
             - name: HASURA_GRAPHQL_ENABLE_CONSOLE
               value: "true"
           ports:
